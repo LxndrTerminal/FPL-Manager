@@ -5,7 +5,7 @@ Welcome to **FPL Manager**, a console application for managing your Fantasy Prem
 ## Features
 
 - Display available players with their details.
-- Add players to your team using numeric input.
+- Add players to your team using player ID.
 - Calculate total points for your team based on individual player performance.
 - Currently includes placeholder methods for input validation, removing players, and viewing the team.
 
@@ -66,16 +66,17 @@ Here are available players:
    Dominic Szobozlai
 3. DEF
    Gabriel
-To add player use number e.g. 1 adds Erling Haaland
+To add player use player ID e.g. 1 adds Erling Haaland
 ```
 
 You can then enter the corresponding numbers to add players to your team.
 
 ## Future Features
 
-- Input validation for user selections.
+- Connect with actual Premier League API.
 - Option to remove players from the team.
-- Ability to view the current team and its total points.
+- A better view of the current team and its total points.
+- Points based on actual data.
 
 ## Contributing
 

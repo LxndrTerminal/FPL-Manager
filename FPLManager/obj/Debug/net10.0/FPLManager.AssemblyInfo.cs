@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FPLManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0004b2b161d07cceaf970b16721d49f3363968d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("FPLManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FPLManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

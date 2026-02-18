@@ -12,3 +12,4 @@
 /home/natasha/Documents/C-sharp/FPLManager/obj/Debug/net10.0/FPLManager.pdb
 /home/natasha/Documents/C-sharp/FPLManager/obj/Debug/net10.0/FPLManager.genruntimeconfig.cache
 /home/natasha/Documents/C-sharp/FPLManager/obj/Debug/net10.0/ref/FPLManager.dll
+/home/natasha/Documents/C-sharp/FPLManager/obj/Debug/net10.0/FPLManager.sourcelink.json

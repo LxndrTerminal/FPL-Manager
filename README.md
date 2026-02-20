@@ -73,8 +73,7 @@ You can then enter the corresponding numbers to add players to your team.
 
 ## Future Features
 
-- Connect with actual Premier League API.
-- Option to remove players from the team.
+- Connect with actual Premier League API
 - A better view of the current team and its total points.
 - Points based on actual data.
 

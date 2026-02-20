@@ -45,8 +45,6 @@ class Program
         players.Add(player3);
 
 
-
-        //TODO input validation, remove player option
         do
         {
             team.BudgetRemaining();
@@ -90,6 +88,49 @@ class Program
 
         team.ViewTeam();    
         team.BudgetRemaining();
+
+
+        Console.WriteLine("\nWould you like to remove a player? (y/N)\n");
+
+        string userinput = Console.ReadLine();
+
+        if (userinput.ToLower().Equals("y"))
+        {
+            do
+            {
+                Console.WriteLine("Which player would you like to remove (Use player id, quit to stop)?: \n");
+                team.ViewTeam();
+                userinput = Console.ReadLine();
+
+                if (userinput == null)
+                {
+                    continue;
+                }
+
+                 switch (userinput)
+            {
+                case "1":
+                    team.RemovePlayer(player1);
+                    break;
+                case "2":
+                    team.RemovePlayer(player2);
+                    break;
+                case "3":
+                    team.RemovePlayer(player3);
+                    break;
+                default:
+                    Console.WriteLine("Incorrect player ID");
+                    break;
+            }
+
+            if (userinput.ToLower().Equals("quit")){
+                  break;  
+                } 
+
+            }while(team.HasPlayers());
+        }
+
+
     }
 }
 
@@ -175,6 +216,11 @@ public class Team
             Console.WriteLine(player.Position + "\n" + player.Name);
             
         }
+    }
+
+    public bool HasPlayers()
+    {
+        return Players.Count>0;
     }
 
     public void BudgetRemaining()

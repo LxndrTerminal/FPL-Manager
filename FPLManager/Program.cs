@@ -7,7 +7,7 @@ public class Program
     {
         Console.WriteLine("\n\n" + "Welcome to FPLManager...");
         Console.WriteLine("Let's set up your team!");
-        Console.WriteLine("-------------------------\n\n");
+        Console.WriteLine("\n\n\n\n\nPress any key to continue");
 
         
 
@@ -18,10 +18,12 @@ public class Program
         PlayerDB playerDB = new PlayerDB();
 
         List<Player> players = playerDB.players;
-
+        Console.ReadKey();
+        Console.Clear();
 
         do
         {
+            
             team.BudgetRemaining();
             Console.WriteLine("Here are available players: ");            
             foreach (Player player in players)
@@ -50,24 +52,27 @@ public class Program
         
         } while (team.HasSpace());
 
-
+        Console.Clear();
         Console.WriteLine("Whats a team without a name? Please name your team: ");
         team.Name = Console.ReadLine();
         
+        Console.Clear();
         Console.WriteLine("Great! Here is your team.");
 
         team.ViewTeam();    
         team.BudgetRemaining();
-
+        Console.WriteLine("\n\nPress any key to continue");
+        Console.ReadKey();
 
         Console.WriteLine("\nWould you like to remove a player? (y/N)\n");
 
         string userinput = Console.ReadLine();
-
+        Console.Clear();
         if (userinput.ToLower().Equals("y"))
         {
             do
             {
+                
                 Console.WriteLine("Which player would you like to remove (Use player id, quit to stop)?: \n");
                 team.ViewTeam();
                 userinput = Console.ReadLine();
@@ -101,6 +106,10 @@ public class Program
 
             }while(team.HasPlayers());
         }
+
+
+        Console.Clear();
+        Console.ReadKey();
 
 
     } 
